@@ -1,10 +1,14 @@
 import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 import "../../global.css";
+
+import { styled } from "nativewind";
+import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
+const SafeAreaView = styled(RNSafeAreaView);
 
 export default function App() {
   return (
-    <View className="flex-1 items-center justify-center bg-background">
+    <SafeAreaView className="flex-1 p-5 bg-background">
       <Text className="text-xl font-bold text-success">
         Welcome to Nativewind!
       </Text>
@@ -30,6 +34,8 @@ export default function App() {
       >
         Go to claudes subscription
       </Link>
-    </View>
+    </SafeAreaView>
   );
 }
+
+// to avoid the content getting hidden behind the screen edges, we can use the SafeAreaView component from react-native-safe-area-context as RNSafeAreaView and styled it with nativewind to apply the tailwind classes to it
