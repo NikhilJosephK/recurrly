@@ -10,7 +10,7 @@ export default function signup() {
       <Text className="text-xl font-bold text-success">sign-up</Text>
       <Link
         href="/"
-        className="text-xl font-bold text-success border border-red-500 "
+        className="border border-red-500 text-xl font-sans-bold text-success"
       >
         Go back
       </Link>

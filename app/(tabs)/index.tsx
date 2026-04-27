@@ -9,19 +9,19 @@ const SafeAreaView = styled(RNSafeAreaView);
 export default function App() {
   return (
     <SafeAreaView className="flex-1 p-5 bg-background">
-      <Text className="text-xl font-bold text-success">
-        Welcome to Nativewind!
+      <Text className="text-7xl font-sans-extrabold text-success">
+        Welcome to Recurrly!
       </Text>
 
       <Link
         href="/(auth)/sign-up"
-        className="text-xl font-bold text-success border border-red-500 mt-4 p-4"
+        className="mt-4 border border-red-500 p-4 text-xl font-sans-extrabold text-success"
       >
         Go to signup
       </Link>
       <Link
         href="/(tabs)/subscriptions/"
-        className="text-xl font-bold text-success border border-red-500 mt-4 p-4"
+        className="mt-4 border border-red-500 p-4 text-xl font-sans-bold text-success"
       >
         Go to subscriptions
       </Link>
@@ -30,7 +30,7 @@ export default function App() {
           pathname: "/(tabs)/subscriptions/[id]",
           params: { id: "claude" },
         }}
-        className="text-xl font-bold text-success border border-red-500 mt-4 p-4"
+        className="mt-4 border border-red-500 p-4 text-xl font-sans-bold text-success"
       >
         Go to claudes subscription
       </Link>
