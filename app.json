@@ -26,6 +26,8 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      "expo-secure-store",
+      "@clerk/expo",
       "expo-router",
       [
         "expo-splash-screen",
@@ -51,7 +53,9 @@
             "./assets/fonts/PlusJakartaSans-ExtraBold.ttf"
           ]
         }
-      ]
+      ],
+      "@clerk/expo",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true,
