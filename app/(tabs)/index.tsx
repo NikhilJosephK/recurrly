@@ -51,7 +51,16 @@ export default function App() {
                   {formatCurrency(HOME_BALANCE.amount)}
                 </Text>
                 <Text className="home-balance-date">
-                  {HOME_BALANCE.nextRenewalDate}
+                  {HOME_BALANCE.nextRenewalDate
+                    ? new Date(HOME_BALANCE.nextRenewalDate).toLocaleDateString(
+                        "en-US",
+                        {
+                          month: "long",
+                          day: "numeric",
+                          year: "numeric",
+                        }
+                      )
+                    : "Not provided"}
                 </Text>
               </View>
               <View>
