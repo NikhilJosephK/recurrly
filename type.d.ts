@@ -1,5 +1,11 @@
 import type { ImageSourcePropType } from "react-native";
 
+declare namespace NodeJS {
+  interface ProcessEnv {
+    EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY?: string;
+  }
+}
+
 declare global {
   interface AppTab {
     name: string;
